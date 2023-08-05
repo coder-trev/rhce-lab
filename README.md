@@ -22,7 +22,15 @@ For the RHEL ISOs, sign up for a free developer account at RedHat's website and 
 
 1. Install VirtualBox
 2. Clone the repo
-3. Place RHEL 9 ISO in the project directory root
+3. Place RHEL 9 ISO in the project directory root.
+
+   You will need the sha256 hash of the ISO.
+
+   ```PowerShell
+   PS>_ Get-FileHash .\rhel.iso
+   ```
+
+   Copy the hash into the appropriate packer files as `sha256:checksum`.
 4. Download packer zip and extract `packer.exe` to the project directory root
 
 ## Build Lab
