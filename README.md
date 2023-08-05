@@ -12,6 +12,8 @@ My lab environment for studying for RHCE on a Windows host. The kickstart files 
 
 ## Requirements
 
+For the RHEL ISOs, sign up for a free developer account at RedHat's website and you get subscriptions for up to 16 virtual machine.
+
 - [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 - [RHEL 9 ISO](https://access.redhat.com)
 - [Packer](https://developer.hashicorp.com/packer/downloads)
@@ -28,8 +30,8 @@ My lab environment for studying for RHCE on a Windows host. The kickstart files 
 > NOTE: Ensure you have sufficient CPU/RAM/Storage on your machine to support 3 machines. Edit the packer files accordingly to fit your environment.
 
 ```PowerShell
->_ .\packer.exe validate rhel.vbox.pkr.hcl
->_ .\packer.exe build rhel.vbox.pkr.hcl
+PS>_ .\packer.exe validate rhel.vbox.pkr.hcl
+PS>_ .\packer.exe build rhel.vbox.pkr.hcl
 ```
 
 ## Login
