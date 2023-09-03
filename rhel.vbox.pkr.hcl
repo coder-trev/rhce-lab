@@ -7,7 +7,7 @@ source "virtualbox-iso" "control" {
 
     cpus = 2
     memory = 2000
-    disk_size = 20480
+    disk_size = 51200
 
     http_directory = "http"
     boot_command = [
